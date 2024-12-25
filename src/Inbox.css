@@ -1,0 +1,115 @@
+/* Inbox Component Styles */
+:root {
+    --inbox-bg: rgba(17, 24, 39, 0.95);
+    --inbox-border: rgba(99, 102, 241, 0.2);
+    --input-bg: rgba(31, 41, 55, 0.8);
+  }
+  
+  .inbox-container {
+    background: var(--inbox-bg);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--inbox-border);
+    backdrop-filter: blur(8px);
+  }
+
+  .inbox-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .inbox-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .inbox-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    background: rgba(31, 41, 55, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 0.5rem;
+    color: #e2e8f0;
+    resize: vertical;
+    transition: all 0.2s ease;
+  }
+  
+  .inbox-textarea:focus {
+    outline: none;
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+  }
+  
+  .find-replace-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: var(--input-bg);
+    border-radius: 0.5rem;
+    border: 1px solid var(--inbox-border);
+  }
+  
+  .find-replace-container label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #e2e8f0;
+  }
+  
+  .find-replace-input {
+    padding: 0.75rem;
+    background: var(--input-bg);
+    border: 1px solid var(--inbox-border);
+    border-radius: 0.5rem;
+    color: #e2e8f0;
+    transition: all 0.2s ease;
+  }
+  
+  .find-replace-input:focus {
+    outline: none;
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+  }
+  
+  .cast-spell-button {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+    align-self: flex-start;
+  }
+  
+  .cast-spell-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .inbox-container {
+      padding: 1rem;
+    }
+    
+    .find-replace-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .inbox-textarea {
+      min-height: 150px;
+    }
+  }

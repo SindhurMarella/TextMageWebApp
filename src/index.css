@@ -1,0 +1,81 @@
+:root {
+  --inbox-bg: rgba(17, 24, 39, 0.95);
+  --inbox-border: rgba(99, 102, 241, 0.2);
+  --primary: #6366f1;
+  --accent: #8b5cf6;
+}
+
+.inbox-container {
+  background: var(--inbox-bg);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--inbox-border);
+  backdrop-filter: blur(8px);
+}
+
+.inbox-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inbox-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.inbox-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 1rem;
+  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 0.5rem;
+  color: #e2e8f0;
+  resize: vertical;
+  transition: all 0.2s ease;
+}
+
+.inbox-textarea:focus {
+  outline: none;
+  border-color: rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.find-replace-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.find-replace-input {
+  padding: 0.75rem;
+  background: rgba(31, 41, 55, 0.8);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 0.5rem;
+  color: #e2e8f0;
+}
+
+.cast-spell-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.cast-spell-button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

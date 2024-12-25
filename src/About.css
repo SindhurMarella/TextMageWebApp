@@ -1,0 +1,99 @@
+/* About Component Styles */
+:root {
+    --about-bg: rgba(17, 24, 39, 0.95);
+    --about-border: rgba(99, 102, 241, 0.2);
+    --text-color: #e2e8f0;
+    --accent-color: #6366f1;
+  }
+
+  .about-container {
+    color: rgba(255, 255, 255, 0.7); /* Light text with high opacity */
+  }
+  
+  
+  .about-container {
+    background: var(--about-bg);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid var(--about-border);
+    backdrop-filter: blur(8px);
+  }
+
+  .about-developer {
+    color: rgba(255, 255, 255, 0.7); /* Light text with high opacity */
+  }
+  
+  .about-developer {
+    background: var(--about-bg);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid var(--about-border);
+    backdrop-filter: blur(8px);
+  }
+  
+  /* About.css */
+.developer-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .developer-button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .about-developer {
+    margin-top: 2rem;
+  }
+  
+  .about-developer h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .about-developer h5 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  
+  .about-developer button {
+    background: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: background 0.3s;
+  }
+  
+  .about-developer button:hover {
+    background: #4f46e5;
+  }
+  

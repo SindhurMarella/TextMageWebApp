@@ -1,0 +1,61 @@
+:root {
+    --spell-primary: #6366f1;
+    --spell-secondary: #8b5cf6;
+    --spell-accent: #a855f7;
+    --spell-bg: rgba(17, 24, 39, 0.95);
+    --spell-border: rgba(99, 102, 241, 0.2);
+}
+
+.spells-container {
+    padding: 1.5rem;
+    background: var(--spell-bg);
+    border-radius: 0.75rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--spell-border);
+    backdrop-filter: blur(8px);
+}
+
+.spells-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--spell-primary), var(--spell-accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.spells-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.spell-button {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: rgba(31, 41, 55, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: #e2e8f0;
+    transition: all 0.2s ease;
+    margin: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.spell-button:hover:not(:disabled) {
+    background: rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.4);
+    transform: translateY(-1px);
+}
+
+.spell-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.spell-button.active {
+    background: rgba(99, 102, 241, 0.3);
+    border-color: rgba(99, 102, 241, 0.5);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
+}

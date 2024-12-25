@@ -1,0 +1,54 @@
+/* Outbox Component Styles */
+:root {
+    --outbox-bg: rgba(17, 24, 39, 0.95);
+    --outbox-border: rgba(99, 102, 241, 0.2);
+  }
+  
+  .outbox-container {
+    background: var(--outbox-bg);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid var(--outbox-border);
+    backdrop-filter: blur(8px);
+  }
+  
+  .outbox-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .outbox-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    background: rgba(31, 41, 55, 0.8);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 0.5rem;
+    color: #e2e8f0;
+    resize: vertical;
+    transition: all 0.2s ease;
+  }
+  
+  .outbox-textarea:focus {
+    outline: none;
+    border-color: rgba(99, 102, 241, 0.4);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .outbox-container {
+      padding: 1rem;
+    }
+    
+    .outbox-textarea {
+      min-height: 150px;
+    }
+  }
+  
