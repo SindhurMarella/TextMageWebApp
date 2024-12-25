@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TextMageWebApp/static/css/main.dd554b34.css",
+    "main.js": "/TextMageWebApp/static/js/main.4943b878.js",
+    "static/js/488.9c92ff38.chunk.js": "/TextMageWebApp/static/js/488.9c92ff38.chunk.js",
+    "index.html": "/TextMageWebApp/index.html",
+    "main.dd554b34.css.map": "/TextMageWebApp/static/css/main.dd554b34.css.map",
+    "main.4943b878.js.map": "/TextMageWebApp/static/js/main.4943b878.js.map",
+    "488.9c92ff38.chunk.js.map": "/TextMageWebApp/static/js/488.9c92ff38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd554b34.css",
+    "static/js/main.4943b878.js"
+  ]
+}
