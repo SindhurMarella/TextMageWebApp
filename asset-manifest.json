@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TextMageWebApp/static/css/main.dd554b34.css",
-    "main.js": "/TextMageWebApp/static/js/main.ab497cef.js",
+    "main.js": "/TextMageWebApp/static/js/main.7fc30d87.js",
     "static/js/488.9c92ff38.chunk.js": "/TextMageWebApp/static/js/488.9c92ff38.chunk.js",
     "index.html": "/TextMageWebApp/index.html",
     "main.dd554b34.css.map": "/TextMageWebApp/static/css/main.dd554b34.css.map",
-    "main.ab497cef.js.map": "/TextMageWebApp/static/js/main.ab497cef.js.map",
+    "main.7fc30d87.js.map": "/TextMageWebApp/static/js/main.7fc30d87.js.map",
     "488.9c92ff38.chunk.js.map": "/TextMageWebApp/static/js/488.9c92ff38.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dd554b34.css",
-    "static/js/main.ab497cef.js"
+    "static/js/main.7fc30d87.js"
   ]
 }
